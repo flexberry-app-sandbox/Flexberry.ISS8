@@ -1,0 +1,36 @@
+﻿{
+  "applicationCaption": "I s s8",
+  "applicationTitle": "I s s8",
+  "items": [
+    {
+      "link": null,
+      "menuName": "i-s-s8",
+      "caption": "ISS8",
+      "title": "ISS8",
+      "children": [
+        {
+          "link": "i-i-s-i-s-s8-пользователь-l",
+          "menuName": null,
+          "caption": "Пользователь",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-s-s8-форма-l",
+          "menuName": null,
+          "caption": "Форма",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-s-s8-вид-поддержки-l",
+          "menuName": null,
+          "caption": "Вид поддержки",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

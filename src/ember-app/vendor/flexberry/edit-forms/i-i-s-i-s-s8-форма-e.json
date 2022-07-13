@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": "видПоддержки",
+      "displayAttributeName": "наименование",
+      "required": true,
+      "relationName": "Условие.ВидПоддержки",
+      "projection": "ВидПоддержкиL",
+      "detailModelName": "i-i-s-i-s-s8-условие"
+    }
+  ],
+  "external": false,
+  "caption": "Форма",
+  "name": "IISISS8ФормаE",
+  "className": "ФормаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-s-s8-форма",
+      "modelProjection": "ФормаE"
+    }
+  ]
+}

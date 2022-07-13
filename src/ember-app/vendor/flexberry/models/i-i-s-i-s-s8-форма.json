@@ -1,0 +1,89 @@
+﻿{
+  "name": "IISISS8Форма",
+  "modelName": "i-i-s-i-s-s8-форма",
+  "className": "Форма",
+  "nameSpace": "IIS.ISS8",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номерФормы",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "условие",
+      "relatedTo": "i-i-s-i-s-s8-условие",
+      "inverse": "форма"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ФормаE",
+      "modelName": "i-i-s-i-s-s8-форма",
+      "attrs": [
+        {
+          "name": "номерФормы",
+          "caption": "Номер формы",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "УсловиеE",
+          "caption": "Условие",
+          "name": "условие",
+          "relatedTo": "i-i-s-i-s-s8-условие",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ФормаL",
+      "modelName": "i-i-s-i-s-s8-форма",
+      "attrs": [
+        {
+          "name": "номерФормы",
+          "caption": "Номер формы",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

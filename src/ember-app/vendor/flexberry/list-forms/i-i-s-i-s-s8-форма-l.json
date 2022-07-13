@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-i-s-s8-форма-e",
+  "editForm": "i-i-s-i-s-s8-форма-e",
+  "external": false,
+  "caption": "Форма",
+  "name": "IISISS8ФормаL",
+  "className": "ФормаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-s-s8-форма",
+      "modelProjection": "ФормаL"
+    }
+  ]
+}

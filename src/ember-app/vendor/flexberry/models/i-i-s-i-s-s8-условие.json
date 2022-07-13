@@ -1,0 +1,92 @@
+﻿{
+  "name": "IISISS8Условие",
+  "modelName": "i-i-s-i-s-s8-условие",
+  "className": "Условие",
+  "nameSpace": "IIS.ISS8",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номерФормы",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "видПоддержки",
+      "relatedTo": "i-i-s-i-s-s8-вид-поддержки",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "форма",
+      "relatedTo": "i-i-s-i-s-s8-форма",
+      "inverse": "условие"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "УсловиеE",
+      "modelName": "i-i-s-i-s-s8-условие",
+      "attrs": [
+        {
+          "name": "номерФормы",
+          "caption": "Номер формы",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "ВидПоддержки",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Вид поддержки",
+          "name": "видПоддержки",
+          "relatedTo": "i-i-s-i-s-s8-вид-поддержки",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
