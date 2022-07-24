@@ -22,19 +22,19 @@ export default Controller.extend({
             link: 'i-i-s-i-s-s8-пользователь-l',
             caption: i18n.t('forms.application.sitemap.i-s-s8.i-i-s-i-s-s8-пользователь-l.caption'),
             title: i18n.t('forms.application.sitemap.i-s-s8.i-i-s-i-s-s8-пользователь-l.title'),
-            icon: 'chart bar',
+            icon: 'list',
             children: null
           }, {
             link: 'i-i-s-i-s-s8-форма-l',
             caption: i18n.t('forms.application.sitemap.i-s-s8.i-i-s-i-s-s8-форма-l.caption'),
             title: i18n.t('forms.application.sitemap.i-s-s8.i-i-s-i-s-s8-форма-l.title'),
-            icon: 'tasks',
+            icon: 'address card',
             children: null
           }, {
             link: 'i-i-s-i-s-s8-вид-поддержки-l',
             caption: i18n.t('forms.application.sitemap.i-s-s8.i-i-s-i-s-s8-вид-поддержки-l.caption'),
             title: i18n.t('forms.application.sitemap.i-s-s8.i-i-s-i-s-s8-вид-поддержки-l.title'),
-            icon: 'calendar',
+            icon: 'tags',
             children: null
           }]
         }
